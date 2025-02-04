@@ -1,0 +1,3738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Window</class>
+ <widget class="QMainWindow" name="Window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1082</width>
+    <height>738</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Window</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+ 	color: #fff;
+}
+QComboBox{
+	text-align: center;
+    background-color:white;
+    color: black;         
+    border: 2px solid gray;     
+    border-radius: 6px;       
+    font-size: 19px;
+    border: 3px solid grey;
+}
+QLineEdit {
+	text-align: center;
+    background-color:white;
+    color: black;         
+    border: 2px solid gray;     
+    border-radius: 6px;       
+    font-size: 19px;
+    border: 3px solid grey;
+}
+#centralwidget{
+	border-image: url(:/icons/icons/bg.jpg) 0 0 0 0;
+}
+#LeftMenuContainer, #employeeContainer, #topContainer_2, #ReservationContainer {
+	background-color: rgba(22, 25, 29, 170);
+border-radius: 10px;
+}
+#bodyMenuContainer_2{
+	background-color: rgba(22, 25, 29, 200);
+border-radius: 10px;
+}
+#LeftMenuContainer, QPushButton{
+	text-align: left;
+	padding: 5px 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	font-family: 'Roboto';
+	font-size: 9pt;
+}
+#head1, #head2_2, #head2_4, #head3,#head2, #head2_3{
+	font-family: 'Roboto';
+	font-size: 12pt;
+border-radius: 10px;
+}
+#topContainer, #roomServicesTopContainer, #topContainer_3, #frame_9,  #widget_40, #frame_4, #widget_8, #widget_9, #widget_72, #widget_66, #buttomContainer, #graphContainer, #roomservicesContainer{
+	background-color: rgba(22, 25, 29, 150);
+border-radius: 10px;
+}
+#frame, #frame_4, #frame_8, #frame_7, #HeaderContainer, #FooterContainer{
+	background-color: rgba(22, 25, 29, 190);
+	border-radius: 10px;
+}
+#InsertFile, #Plot{
+background-color: rgba(22, 25, 29, 255);
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QStackedWidget" name="MainWindow">
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Plain</enum>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page_2">
+       <layout class="QHBoxLayout" name="horizontalLayout_16">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>338</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_60" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_54">
+           <item>
+            <spacer name="verticalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>160</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QWidget" name="bodyMenuContainer_2" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_55">
+              <item>
+               <widget class="QWidget" name="widget_84" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_59">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                </layout>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignmentFlag::AlignHCenter">
+               <widget class="QLabel" name="label_36">
+                <property name="font">
+                 <font>
+                  <pointsize>30</pointsize>
+                  <italic>true</italic>
+                  <bold>true</bold>
+                  <underline>false</underline>
+                  <strikeout>false</strikeout>
+                  <kerning>false</kerning>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>login</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_85" native="true">
+                <layout class="QVBoxLayout" name="verticalLayout_56">
+                 <item>
+                  <widget class="QLabel" name="label_44">
+                   <property name="font">
+                    <font>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Email  :</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="mailTxt">
+                   <property name="font">
+                    <font>
+                     <pointsize>-1</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_86" native="true">
+                <layout class="QVBoxLayout" name="verticalLayout_57">
+                 <item>
+                  <widget class="QLabel" name="label_45">
+                   <property name="font">
+                    <font>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Password:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="passwordTxt">
+                   <property name="font">
+                    <font>
+                     <pointsize>-1</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignmentFlag::AlignHCenter">
+               <widget class="QPushButton" name="loginBtn">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>-1</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; /* Rounded corners */
+        padding: 5px 10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); /* Glow effect */
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                </property>
+                <property name="text">
+                 <string>login</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_87" native="true">
+                <layout class="QVBoxLayout" name="verticalLayout_58">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>10</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>10</number>
+                 </property>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>160</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>338</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="LeftMenuContainer" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item alignment="Qt::AlignmentFlag::AlignTop">
+            <widget class="QWidget" name="widget_4" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item alignment="Qt::AlignmentFlag::AlignLeft">
+               <widget class="QPushButton" name="MenuBtn">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/icons/align-justify.svg</normaloff>:/icons/icons/align-justify.svg</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_5" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>10</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>10</number>
+              </property>
+              <item>
+               <widget class="QPushButton" name="LogoutBtn">
+                <property name="styleSheet">
+                 <string notr="true">Rectangle {
+    id: flashingblob
+    width: 75; height: 75
+    color: &quot;blue&quot;
+    opacity: 1.0
+
+    MouseArea {
+        anchors.fill: parent
+        onClicked: {
+            animateColor.start()
+            animateOpacity.start()
+        }
+    }
+
+    PropertyAnimation {id: animateColor; target: flashingblob; properties: &quot;color&quot;; to: &quot;green&quot;; duration: 100}
+
+    NumberAnimation {
+        id: animateOpacity
+        target: flashingblob
+        properties: &quot;opacity&quot;
+        from: 0.99
+        to: 1.0
+        loops: Animation.Infinite
+        easing {type: Easing.OutBack; overshoot: 500}
+   }
+}</string>
+                </property>
+                <property name="text">
+                 <string>  Log Out</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/icons/log-out.svg</normaloff>:/icons/icons/log-out.svg</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="SettinBtn_2">
+                <property name="text">
+                 <string> Settings</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/icons/settings.svg</normaloff>:/icons/icons/settings.svg</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="InfoBtn_2">
+                <property name="text">
+                 <string> Information</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/icons/info.svg</normaloff>:/icons/icons/info.svg</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="HelpBtn_2">
+                <property name="text">
+                 <string> Help</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/icons/help-circle.svg</normaloff>:/icons/icons/help-circle.svg</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item alignment="Qt::AlignmentFlag::AlignBottom">
+            <widget class="QWidget" name="widget_6" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>10</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>10</number>
+              </property>
+              <item>
+               <widget class="QPushButton" name="exitBtn">
+                <property name="text">
+                 <string>  Exit</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/icons/external-link.svg</normaloff>:/icons/icons/external-link.svg</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="MainMenuContainer" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item alignment="Qt::AlignmentFlag::AlignTop">
+            <widget class="QWidget" name="HeaderContainer" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item alignment="Qt::AlignmentFlag::AlignLeft">
+               <widget class="QFrame" name="frame_2">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <property name="spacing">
+                  <number>7</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_4">
+                   <property name="maximumSize">
+                    <size>
+                     <width>40</width>
+                     <height>35</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="resources.qrc">:/icons/icons/logo.png</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_5">
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Modern Hotel Management System</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="MainMenu" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>11</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QStackedWidget" name="subWindow">
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="manager">
+                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QWidget" name="MainMenu_2" native="true">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_3">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QWidget" name="graphContainer" native="true">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>200</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_10">
+                        <item>
+                         <widget class="QFrame" name="frame">
+                          <property name="frameShape">
+                           <enum>QFrame::Shape::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Shadow::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_8">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                            <widget class="QLabel" name="head1">
+                             <property name="text">
+                              <string>Year Revenue</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignmentFlag::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QCustomPlot" name="graph" native="true">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="employeeContainer" native="true">
+                       <property name="minimumSize">
+                        <size>
+                         <width>200</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_25">
+                        <item>
+                         <widget class="QFrame" name="frame_7">
+                          <property name="frameShape">
+                           <enum>QFrame::Shape::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Shadow::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_11">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                            <widget class="QLabel" name="head2">
+                             <property name="text">
+                              <string>Search for Emplyees</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignmentFlag::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QWidget" name="widget" native="true">
+                          <layout class="QHBoxLayout" name="horizontalLayout_22">
+                           <item>
+                            <widget class="QWidget" name="widget_2" native="true">
+                             <layout class="QVBoxLayout" name="verticalLayout_12">
+                              <property name="leftMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="rightMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="bottomMargin">
+                               <number>0</number>
+                              </property>
+                              <item>
+                               <widget class="QWidget" name="widget_13" native="true">
+                                <layout class="QHBoxLayout" name="horizontalLayout_14">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QLabel" name="label">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>13</pointsize>
+                                     <bold>true</bold>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>Name :</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="employeeName">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>13</pointsize>
+                                     <bold>false</bold>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_10" native="true">
+                                <layout class="QHBoxLayout" name="horizontalLayout_10">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QLabel" name="label_6">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>13</pointsize>
+                                     <bold>true</bold>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>Position :</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="employeePosition">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>13</pointsize>
+                                     <bold>false</bold>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_12" native="true">
+                                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QLabel" name="label_2">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>13</pointsize>
+                                     <bold>true</bold>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>Phone :</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="employeePhone">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>13</pointsize>
+                                     <bold>false</bold>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_3" native="true">
+                                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QLabel" name="label_7">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>13</pointsize>
+                                     <bold>true</bold>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>Mail :</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="employeeEmail">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>13</pointsize>
+                                     <bold>false</bold>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_11" native="true">
+                                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QLabel" name="label_3">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>13</pointsize>
+                                     <bold>true</bold>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>Salary :</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="employeeSalary">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>13</pointsize>
+                                     <bold>false</bold>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_14" native="true">
+                                <layout class="QHBoxLayout" name="horizontalLayout_12">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QLabel" name="label_8">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>13</pointsize>
+                                     <bold>true</bold>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>Hire Date :</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="hireDate">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>13</pointsize>
+                                     <bold>false</bold>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item alignment="Qt::AlignmentFlag::AlignRight">
+                            <widget class="QWidget" name="widget_36" native="true">
+                             <layout class="QVBoxLayout" name="verticalLayout_24">
+                              <item>
+                               <spacer name="verticalSpacer_8">
+                                <property name="orientation">
+                                 <enum>Qt::Orientation::Vertical</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                 <size>
+                                  <width>20</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                               </spacer>
+                              </item>
+                              <item alignment="Qt::AlignmentFlag::AlignTop">
+                               <widget class="QLabel" name="label_22">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>13</pointsize>
+                                  <bold>true</bold>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string>Search for employee by Email :</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="employeeSearch"/>
+                              </item>
+                              <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                               <widget class="QPushButton" name="searchBtn">
+                                <property name="font">
+                                 <font>
+                                  <family>Arial</family>
+                                  <pointsize>-1</pointsize>
+                                  <bold>true</bold>
+                                 </font>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; /* Rounded corners */
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); /* Glow effect */
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                                </property>
+                                <property name="text">
+                                 <string>Search</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <spacer name="verticalSpacer_3">
+                                <property name="orientation">
+                                 <enum>Qt::Orientation::Vertical</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                 <size>
+                                  <width>20</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                               </spacer>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="roomService">
+                 <layout class="QVBoxLayout" name="verticalLayout_31">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QWidget" name="roomservicesContainer" native="true">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_22">
+                     <item>
+                      <widget class="QFrame" name="roomServicesTopContainer">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Raised</enum>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_2">
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="head2_3">
+                          <property name="text">
+                           <string>Room Service</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignmentFlag::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="Room_Services">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_21">
+                        <item>
+                         <widget class="QTableWidget" name="serviceTable">
+                          <property name="palette">
+                           <palette>
+                            <active>
+                             <colorrole role="WindowText">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Button">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="0">
+                                <red>0</red>
+                                <green>0</green>
+                                <blue>0</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Text">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="ButtonText">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Base">
+                              <brush brushstyle="NoBrush">
+                               <color alpha="255">
+                                <red>0</red>
+                                <green>0</green>
+                                <blue>0</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Window">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="0">
+                                <red>0</red>
+                                <green>0</green>
+                                <blue>0</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Link">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="PlaceholderText">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="128">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Accent">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                            </active>
+                            <inactive>
+                             <colorrole role="WindowText">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Button">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="0">
+                                <red>0</red>
+                                <green>0</green>
+                                <blue>0</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Text">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="ButtonText">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Base">
+                              <brush brushstyle="NoBrush">
+                               <color alpha="255">
+                                <red>0</red>
+                                <green>0</green>
+                                <blue>0</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Window">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="0">
+                                <red>0</red>
+                                <green>0</green>
+                                <blue>0</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Link">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="PlaceholderText">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="128">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Accent">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                            </inactive>
+                            <disabled>
+                             <colorrole role="WindowText">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Button">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="0">
+                                <red>0</red>
+                                <green>0</green>
+                                <blue>0</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Text">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="ButtonText">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Base">
+                              <brush brushstyle="NoBrush">
+                               <color alpha="255">
+                                <red>0</red>
+                                <green>0</green>
+                                <blue>0</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Window">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="0">
+                                <red>0</red>
+                                <green>0</green>
+                                <blue>0</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Link">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="PlaceholderText">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="128">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                             <colorrole role="Accent">
+                              <brush brushstyle="SolidPattern">
+                               <color alpha="255">
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                               </color>
+                              </brush>
+                             </colorrole>
+                            </disabled>
+                           </palette>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <bold>false</bold>
+                           </font>
+                          </property>
+                          <column>
+                           <property name="text">
+                            <string>Room number</string>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>10</pointsize>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                           <property name="background">
+                            <color>
+                             <red>170</red>
+                             <green>150</green>
+                             <blue>133</blue>
+                            </color>
+                           </property>
+                           <property name="foreground">
+                            <brush brushstyle="SolidPattern">
+                             <color alpha="255">
+                              <red>83</red>
+                              <green>42</green>
+                              <blue>0</blue>
+                             </color>
+                            </brush>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Service type</string>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>10</pointsize>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                           <property name="background">
+                            <color>
+                             <red>170</red>
+                             <green>150</green>
+                             <blue>133</blue>
+                            </color>
+                           </property>
+                           <property name="foreground">
+                            <brush brushstyle="SolidPattern">
+                             <color alpha="255">
+                              <red>83</red>
+                              <green>42</green>
+                              <blue>0</blue>
+                             </color>
+                            </brush>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Done OR Not</string>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>10</pointsize>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                           <property name="background">
+                            <color>
+                             <red>170</red>
+                             <green>150</green>
+                             <blue>133</blue>
+                            </color>
+                           </property>
+                           <property name="foreground">
+                            <brush brushstyle="SolidPattern">
+                             <color alpha="255">
+                              <red>83</red>
+                              <green>42</green>
+                              <blue>0</blue>
+                             </color>
+                            </brush>
+                           </property>
+                          </column>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QWidget" name="widget_8" native="true">
+                          <layout class="QVBoxLayout" name="verticalLayout_21">
+                           <item>
+                            <widget class="QComboBox" name="servicesList">
+                             <property name="minimumSize">
+                              <size>
+                               <width>300</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>300</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="verticalSpacer_2">
+                             <property name="orientation">
+                              <enum>Qt::Orientation::Vertical</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>20</width>
+                               <height>40</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item alignment="Qt::AlignmentFlag::AlignRight">
+                            <widget class="QPushButton" name="serviceDone">
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>-1</pointsize>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; /* Rounded corners */
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); /* Glow effect */
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                             </property>
+                             <property name="text">
+                              <string>Mark as Done</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="customerReservation">
+                 <layout class="QVBoxLayout" name="verticalLayout_23">
+                  <property name="spacing">
+                   <number>7</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QWidget" name="topContainer_2" native="true">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_14">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QWidget" name="reservationContainer" native="true">
+                       <layout class="QVBoxLayout" name="verticalLayout_53">
+                        <item alignment="Qt::AlignmentFlag::AlignTop">
+                         <widget class="QFrame" name="frame_4">
+                          <property name="frameShape">
+                           <enum>QFrame::Shape::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Shadow::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_46">
+                           <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                            <widget class="QLabel" name="head3">
+                             <property name="text">
+                              <string>Reservation</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignmentFlag::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QWidget" name="widget_16" native="true">
+                          <layout class="QHBoxLayout" name="horizontalLayout_58">
+                           <property name="leftMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <widget class="QWidget" name="widget_17" native="true">
+                             <layout class="QVBoxLayout" name="verticalLayout_49">
+                              <item>
+                               <widget class="QLabel" name="label_42">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>15</pointsize>
+                                  <bold>true</bold>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string> small Room for cuples</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_75" native="true">
+                                <layout class="QVBoxLayout" name="verticalLayout_50">
+                                 <item>
+                                  <widget class="QWidget" name="widget_76" native="true">
+                                   <layout class="QHBoxLayout" name="horizontalLayout_52">
+                                    <item>
+                                     <widget class="QPushButton" name="btn101">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home d.png</normaloff>:/icons/icons/home d.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn102">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn103">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn104">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>50</width>
+                                        <height>50</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn105">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>50</width>
+                                        <height>50</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QWidget" name="widget_77" native="true">
+                                   <layout class="QHBoxLayout" name="horizontalLayout_53">
+                                    <item>
+                                     <widget class="QPushButton" name="btn106">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home d.png</normaloff>:/icons/icons/home d.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn107">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn108">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn109">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn110">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>30</width>
+                                        <height>30</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLabel" name="lbl5_6">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>15</pointsize>
+                                  <bold>true</bold>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string>medium Rooms for families (3-5) persons</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_78" native="true">
+                                <layout class="QVBoxLayout" name="verticalLayout_51">
+                                 <item>
+                                  <widget class="QWidget" name="widget_79" native="true">
+                                   <layout class="QHBoxLayout" name="horizontalLayout_54">
+                                    <item>
+                                     <widget class="QPushButton" name="btn201">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home d.png</normaloff>:/icons/icons/home d.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn202">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn203">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn204">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn205">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>30</width>
+                                        <height>30</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QWidget" name="widget_80" native="true">
+                                   <layout class="QHBoxLayout" name="horizontalLayout_55">
+                                    <item>
+                                     <widget class="QPushButton" name="btn206">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home d.png</normaloff>:/icons/icons/home d.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn207">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn208">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn209">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn210">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>30</width>
+                                        <height>30</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLabel" name="label_43">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>15</pointsize>
+                                  <bold>true</bold>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string>Big Room +5 persons</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_81" native="true">
+                                <layout class="QVBoxLayout" name="verticalLayout_52">
+                                 <item>
+                                  <widget class="QWidget" name="widget_82" native="true">
+                                   <layout class="QHBoxLayout" name="horizontalLayout_56">
+                                    <item>
+                                     <widget class="QPushButton" name="btn301">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home d.png</normaloff>:/icons/icons/home d.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn302">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn303">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn304">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn305">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>30</width>
+                                        <height>30</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QWidget" name="widget_83" native="true">
+                                   <layout class="QHBoxLayout" name="horizontalLayout_57">
+                                    <item>
+                                     <widget class="QPushButton" name="btn306">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home d.png</normaloff>:/icons/icons/home d.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn307">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn308">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn309">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>40</width>
+                                        <height>40</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="btn310">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="icon">
+                                       <iconset resource="resources.qrc">
+                                        <normaloff>:/icons/icons/home A.png</normaloff>:/icons/icons/home A.png</iconset>
+                                      </property>
+                                      <property name="iconSize">
+                                       <size>
+                                        <width>30</width>
+                                        <height>30</height>
+                                       </size>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="widget_26" native="true">
+                             <layout class="QVBoxLayout" name="verticalLayout_44">
+                              <item>
+                               <widget class="QWidget" name="widget_66" native="true">
+                                <layout class="QVBoxLayout" name="verticalLayout_45">
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QWidget" name="widget_68" native="true">
+                                   <layout class="QHBoxLayout" name="horizontalLayout_48">
+                                    <item>
+                                     <widget class="QLabel" name="label_34">
+                                      <property name="font">
+                                       <font>
+                                        <pointsize>14</pointsize>
+                                        <bold>true</bold>
+                                       </font>
+                                      </property>
+                                      <property name="text">
+                                       <string>Number of persons :</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item alignment="Qt::AlignmentFlag::AlignRight">
+                                     <widget class="QLabel" name="numberOfPersons">
+                                      <property name="font">
+                                       <font>
+                                        <pointsize>15</pointsize>
+                                       </font>
+                                      </property>
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QWidget" name="widget_69" native="true">
+                                   <layout class="QHBoxLayout" name="horizontalLayout_49">
+                                    <item>
+                                     <widget class="QLabel" name="label_37">
+                                      <property name="font">
+                                       <font>
+                                        <pointsize>14</pointsize>
+                                        <bold>true</bold>
+                                       </font>
+                                      </property>
+                                      <property name="text">
+                                       <string>Price per night :</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item alignment="Qt::AlignmentFlag::AlignRight">
+                                     <widget class="QLabel" name="pricePerNight">
+                                      <property name="font">
+                                       <font>
+                                        <pointsize>15</pointsize>
+                                       </font>
+                                      </property>
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QWidget" name="widget_70" native="true">
+                                   <layout class="QHBoxLayout" name="horizontalLayout_50">
+                                    <item>
+                                     <widget class="QLabel" name="label_38">
+                                      <property name="font">
+                                       <font>
+                                        <pointsize>14</pointsize>
+                                        <bold>true</bold>
+                                       </font>
+                                      </property>
+                                      <property name="text">
+                                       <string>Room size :</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item alignment="Qt::AlignmentFlag::AlignRight">
+                                     <widget class="QLabel" name="RoomSize">
+                                      <property name="font">
+                                       <font>
+                                        <pointsize>15</pointsize>
+                                       </font>
+                                      </property>
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QWidget" name="widget_71" native="true">
+                                   <layout class="QHBoxLayout" name="horizontalLayout_51">
+                                    <item>
+                                     <widget class="QLabel" name="label_39">
+                                      <property name="font">
+                                       <font>
+                                        <pointsize>14</pointsize>
+                                        <bold>true</bold>
+                                       </font>
+                                      </property>
+                                      <property name="text">
+                                       <string>Is reserved :</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item alignment="Qt::AlignmentFlag::AlignRight">
+                                     <widget class="QLabel" name="isReserved">
+                                      <property name="font">
+                                       <font>
+                                        <pointsize>15</pointsize>
+                                       </font>
+                                      </property>
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_72" native="true">
+                                <layout class="QVBoxLayout" name="verticalLayout_46">
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item alignment="Qt::AlignmentFlag::AlignTop">
+                                  <widget class="QWidget" name="widget_73" native="true">
+                                   <layout class="QVBoxLayout" name="verticalLayout_47">
+                                    <item>
+                                     <widget class="QLabel" name="label_40">
+                                      <property name="font">
+                                       <font>
+                                        <pointsize>15</pointsize>
+                                        <bold>true</bold>
+                                       </font>
+                                      </property>
+                                      <property name="text">
+                                       <string>Check in  date :</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QDateEdit" name="checkin">
+                                      <property name="font">
+                                       <font>
+                                        <pointsize>11</pointsize>
+                                       </font>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="label_41">
+                                      <property name="font">
+                                       <font>
+                                        <pointsize>15</pointsize>
+                                        <bold>true</bold>
+                                       </font>
+                                      </property>
+                                      <property name="text">
+                                       <string>Check out data :</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QDateEdit" name="checkout">
+                                      <property name="font">
+                                       <font>
+                                        <pointsize>11</pointsize>
+                                       </font>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QWidget" name="widget_74" native="true">
+                                   <layout class="QGridLayout" name="gridLayout_3">
+                                    <item row="2" column="0" alignment="Qt::AlignmentFlag::AlignLeft">
+                                     <widget class="QPushButton" name="rsBtn">
+                                      <property name="font">
+                                       <font>
+                                        <family>Arial</family>
+                                        <pointsize>-1</pointsize>
+                                        <bold>true</bold>
+                                       </font>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; /* Rounded corners */
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); /* Glow effect */
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Room Services</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="2" column="1" alignment="Qt::AlignmentFlag::AlignRight">
+                                     <widget class="QPushButton" name="reserve">
+                                      <property name="font">
+                                       <font>
+                                        <family>Arial</family>
+                                        <pointsize>-1</pointsize>
+                                        <bold>true</bold>
+                                       </font>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; /* Rounded corners */
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); /* Glow effect */
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>reserve</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="customerServices">
+                 <layout class="QVBoxLayout" name="verticalLayout_19">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QWidget" name="topContainer" native="true">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>20</pointsize>
+                     </font>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_15">
+                     <item alignment="Qt::AlignmentFlag::AlignTop">
+                      <widget class="QFrame" name="frame_9">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_15">
+                        <item>
+                         <widget class="QLabel" name="head2_4">
+                          <property name="text">
+                           <string>Customer Service</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignmentFlag::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_15" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_17">
+                        <item>
+                         <spacer name="horizontalSpacer_3">
+                          <property name="orientation">
+                           <enum>Qt::Orientation::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QWidget" name="widget_18" native="true">
+                          <layout class="QVBoxLayout" name="verticalLayout_16">
+                           <item>
+                            <widget class="QWidget" name="widget_7" native="true">
+                             <layout class="QHBoxLayout" name="horizontalLayout_4">
+                              <item>
+                               <widget class="QWidget" name="widget_19" native="true">
+                                <layout class="QVBoxLayout" name="verticalLayout_8">
+                                 <item>
+                                  <widget class="QPushButton" name="breakfastBrn">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>150</width>
+                                     <height>0</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>Arial</family>
+                                     <pointsize>-1</pointsize>
+                                     <bold>true</bold>
+                                    </font>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; 
+		text-align: center;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); /* Glow effect */
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                   <property name="icon">
+                                    <iconset resource="resources.qrc">
+                                     <normaloff>:/icons/icons/breakfast.png</normaloff>:/icons/icons/breakfast.png</iconset>
+                                   </property>
+                                   <property name="iconSize">
+                                    <size>
+                                     <width>100</width>
+                                     <height>100</height>
+                                    </size>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                                  <widget class="QLabel" name="label_15">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>12</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>Breakfast</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="wid" native="true">
+                                <layout class="QVBoxLayout" name="verticalLayout_7">
+                                 <item>
+                                  <widget class="QPushButton" name="lunchBtn">
+                                   <property name="font">
+                                    <font>
+                                     <family>Arial</family>
+                                     <pointsize>-1</pointsize>
+                                     <bold>true</bold>
+                                    </font>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; 
+		text-align: center;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); 
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                   <property name="icon">
+                                    <iconset resource="resources.qrc">
+                                     <normaloff>:/icons/icons/breakfast (1).png</normaloff>:/icons/icons/breakfast (1).png</iconset>
+                                   </property>
+                                   <property name="iconSize">
+                                    <size>
+                                     <width>100</width>
+                                     <height>100</height>
+                                    </size>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                                  <widget class="QLabel" name="label_16">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>12</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>Lunch</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="wid18" native="true">
+                                <layout class="QVBoxLayout" name="verticalLayout_9">
+                                 <item>
+                                  <widget class="QPushButton" name="dinnerBtn">
+                                   <property name="font">
+                                    <font>
+                                     <family>Arial</family>
+                                     <pointsize>-1</pointsize>
+                                     <bold>true</bold>
+                                    </font>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; 
+		text-align: center;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); 
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                   <property name="icon">
+                                    <iconset resource="resources.qrc">
+                                     <normaloff>:/icons/icons/serving-dish.png</normaloff>:/icons/icons/serving-dish.png</iconset>
+                                   </property>
+                                   <property name="iconSize">
+                                    <size>
+                                     <width>100</width>
+                                     <height>100</height>
+                                    </size>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                                  <widget class="QLabel" name="label_17">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>12</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>Dinner</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="widget_20" native="true">
+                             <layout class="QHBoxLayout" name="horizontalLayout_18">
+                              <item>
+                               <widget class="QWidget" name="widget_21" native="true">
+                                <layout class="QVBoxLayout" name="verticalLayout_11">
+                                 <item>
+                                  <widget class="QPushButton" name="cleanRoomBtn">
+                                   <property name="font">
+                                    <font>
+                                     <family>Arial</family>
+                                     <pointsize>-1</pointsize>
+                                     <bold>true</bold>
+                                    </font>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; 
+		text-align: center;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); 
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                   <property name="icon">
+                                    <iconset>
+                                     <normalon>:/icons/icons/cleaning_995053.png</normalon>
+                                    </iconset>
+                                   </property>
+                                   <property name="iconSize">
+                                    <size>
+                                     <width>100</width>
+                                     <height>100</height>
+                                    </size>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                                  <widget class="QLabel" name="label_18">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>12</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>Clean Room</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_22" native="true">
+                                <layout class="QVBoxLayout" name="verticalLayout_17">
+                                 <item>
+                                  <widget class="QPushButton" name="roomMaintainceBtn">
+                                   <property name="font">
+                                    <font>
+                                     <family>Arial</family>
+                                     <pointsize>-1</pointsize>
+                                     <bold>true</bold>
+                                    </font>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; 
+		text-align: center;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); 
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                   <property name="icon">
+                                    <iconset resource="resources.qrc">
+                                     <normaloff>:/icons/icons/wrench.png</normaloff>:/icons/icons/wrench.png</iconset>
+                                   </property>
+                                   <property name="iconSize">
+                                    <size>
+                                     <width>100</width>
+                                     <height>100</height>
+                                    </size>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                                  <widget class="QLabel" name="label_19">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>12</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>Room maintaince</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="widget_23" native="true">
+                                <layout class="QVBoxLayout" name="verticalLayout_18">
+                                 <item>
+                                  <widget class="QPushButton" name="drinkBtn">
+                                   <property name="font">
+                                    <font>
+                                     <family>Arial</family>
+                                     <pointsize>-1</pointsize>
+                                     <bold>true</bold>
+                                    </font>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; 
+		text-align: center;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); 
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                   <property name="icon">
+                                    <iconset resource="resources.qrc">
+                                     <normaloff>:/icons/icons/drink.png</normaloff>:/icons/icons/drink.png</iconset>
+                                   </property>
+                                   <property name="iconSize">
+                                    <size>
+                                     <width>100</width>
+                                     <height>100</height>
+                                    </size>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                                  <widget class="QLabel" name="label_20">
+                                   <property name="font">
+                                    <font>
+                                     <pointsize>12</pointsize>
+                                    </font>
+                                   </property>
+                                   <property name="text">
+                                    <string>Drink</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_4">
+                          <property name="orientation">
+                           <enum>Qt::Orientation::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_24" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_19">
+                        <item alignment="Qt::AlignmentFlag::AlignLeft">
+                         <widget class="QWidget" name="price" native="true">
+                          <layout class="QHBoxLayout" name="horizontalLayout_20">
+                           <item>
+                            <widget class="QLabel" name="label_21">
+                             <property name="font">
+                              <font>
+                               <pointsize>20</pointsize>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Price :</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item alignment="Qt::AlignmentFlag::AlignLeft">
+                            <widget class="QLabel" name="servicePrice">
+                             <property name="font">
+                              <font>
+                               <pointsize>16</pointsize>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item alignment="Qt::AlignmentFlag::AlignRight">
+                         <widget class="QPushButton" name="ServiceOrder">
+                          <property name="font">
+                           <font>
+                            <family>Arial</family>
+                            <pointsize>-1</pointsize>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; /* Rounded corners */
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); /* Glow effect */
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                          </property>
+                          <property name="text">
+                           <string>Order now !</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="receptionist">
+                 <layout class="QVBoxLayout" name="verticalLayout_30">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QWidget" name="topContainer_3" native="true">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_26">
+                     <item alignment="Qt::AlignmentFlag::AlignTop">
+                      <widget class="QFrame" name="frame_8">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_27">
+                        <item>
+                         <widget class="QLabel" name="head2_2">
+                          <property name="text">
+                           <string>Receptionist System</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignmentFlag::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_37" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_29">
+                        <item>
+                         <widget class="QLabel" name="label_23">
+                          <property name="font">
+                           <font>
+                            <family>Verdana</family>
+                            <pointsize>14</pointsize>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>Enter Client Email :</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="customerEmailTxt">
+                          <property name="font">
+                           <font>
+                            <pointsize>-1</pointsize>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">QLineEdit {
+	text-align: center;
+    background-color:white;
+    color: black;           
+    border: 2px solid gray;   
+    border-radius: 6px;        
+    font-size: 19px;
+
+    border: 3px solid grey;
+	
+   
+}
+
+    </string>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                          <property name="echoMode">
+                           <enum>QLineEdit::EchoMode::Normal</enum>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignmentFlag::AlignCenter</set>
+                          </property>
+                          <property name="dragEnabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="placeholderText">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_38" native="true"/>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_39" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_30">
+                        <item>
+                         <widget class="QWidget" name="widget_40" native="true">
+                          <property name="styleSheet">
+                           <string notr="true"/>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_28">
+                           <item>
+                            <widget class="QLabel" name="label_24">
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>-1</pointsize>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QWidget {
+    background-color: transparent; /* جعل الخلفية شفافة */
+    color: lightblue; /* لون النص */
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Client Data</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="widget_41" native="true">
+                             <layout class="QHBoxLayout" name="horizontalLayout_31">
+                              <item>
+                               <widget class="QLabel" name="label_25">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>13</pointsize>
+                                  <bold>true</bold>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string>Name : </string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item alignment="Qt::AlignmentFlag::AlignRight">
+                               <widget class="QLabel" name="customernameLbl">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>13</pointsize>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="widget_42" native="true">
+                             <layout class="QHBoxLayout" name="horizontalLayout_32">
+                              <item>
+                               <widget class="QLabel" name="label_26">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>13</pointsize>
+                                  <bold>true</bold>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string>Phone Number :</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item alignment="Qt::AlignmentFlag::AlignRight">
+                               <widget class="QLabel" name="customerpersonsnumLbl">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>13</pointsize>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="widget_43" native="true">
+                             <layout class="QHBoxLayout" name="horizontalLayout_33">
+                              <item>
+                               <widget class="QLabel" name="label_27">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>13</pointsize>
+                                  <bold>true</bold>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string>Room Number : </string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item alignment="Qt::AlignmentFlag::AlignRight">
+                               <widget class="QLabel" name="customerroomnumLbl">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>13</pointsize>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="widget_44" native="true">
+                             <layout class="QHBoxLayout" name="horizontalLayout_34">
+                              <item>
+                               <widget class="QLabel" name="label_28">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>13</pointsize>
+                                  <bold>true</bold>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string>Check out Date : </string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item alignment="Qt::AlignmentFlag::AlignRight">
+                               <widget class="QLabel" name="customercheckoutLbl">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>13</pointsize>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="widget_45" native="true">
+                             <layout class="QHBoxLayout" name="horizontalLayout_35">
+                              <item>
+                               <widget class="QLabel" name="label_29">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>13</pointsize>
+                                  <bold>true</bold>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string>Check in Date : </string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item alignment="Qt::AlignmentFlag::AlignRight">
+                               <widget class="QLabel" name="customercheckinLbl">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>13</pointsize>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="widget_46" native="true">
+                             <layout class="QHBoxLayout" name="horizontalLayout_36">
+                              <item>
+                               <widget class="QLabel" name="label_30">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>13</pointsize>
+                                  <bold>true</bold>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string>Total bill : </string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item alignment="Qt::AlignmentFlag::AlignRight">
+                               <widget class="QLabel" name="customertotalbillLbl">
+                                <property name="font">
+                                 <font>
+                                  <pointsize>13</pointsize>
+                                 </font>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item alignment="Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignBottom">
+                         <widget class="QWidget" name="widget_48" native="true">
+                          <layout class="QVBoxLayout" name="verticalLayout_29">
+                           <item alignment="Qt::AlignmentFlag::AlignVCenter">
+                            <widget class="QPushButton" name="findBtn">
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>-1</pointsize>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; /* Rounded corners */
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); /* Glow effect */
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                             </property>
+                             <property name="text">
+                              <string>Find Client</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="checkinBtn">
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>-1</pointsize>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; /* Rounded corners */
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); /* Glow effect */
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                             </property>
+                             <property name="text">
+                              <string>Check in</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="checkoutBtn">
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>-1</pointsize>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QPushButton {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(50, 150, 250, 255), 
+                                          stop:1 rgba(0, 100, 200, 255));
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px; /* Rounded corners */
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: &quot;Arial&quot;;
+    }
+    QPushButton:hover {
+        background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                          stop:0 rgba(70, 170, 255, 255), 
+                                          stop:1 rgba(10, 120, 220, 255));
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 150, 255, 0.6); /* Glow effect */
+    }
+    QPushButton:pressed {
+        background-color: rgba(0, 90, 180, 255);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }</string>
+                             </property>
+                             <property name="text">
+                              <string>Check out</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
