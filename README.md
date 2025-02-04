@@ -1,7 +1,3 @@
-Here's a **README** summary based on your project report:
-
----
-
 # **Hotel Management System**
 
 ## **Overview**
