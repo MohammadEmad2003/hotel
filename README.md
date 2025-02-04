@@ -34,3 +34,8 @@ This project is a simplified **Hotel Management System** designed to streamline 
 - Mohamad Emad Hamdy
 - Ahmed Hussien 
 - Janah Mahmoud Tamer
+---
+Finally you can find our final release of the application from 
+``` sh
+build\Desktop_Qt_6_8_2_MinGW_64_bit-Release\release
+```
