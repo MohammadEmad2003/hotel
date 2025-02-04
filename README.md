@@ -11,8 +11,6 @@ This project is a simplified **Hotel Management System** designed to streamline 
 ✅ **Room Service Management** – Staff can track and update room service requests.  
 ✅ **Receptionist Tools** – Check-in and check-out management, reservation search by email.  
 
----
-
 ## **Technologies Used**
 - **Programming Language:** C++  
 - **GUI Framework:** Qt  
@@ -30,7 +28,16 @@ This project is a simplified **Hotel Management System** designed to streamline 
 - Mohamad Emad Hamdy
 - Ahmed Hussien 
 - Janah Mahmoud Tamer
----
+
+## **Demo Credentials to Access our system**
+| Role           | Email                | Password  |
+|---------------|----------------------|----------|
+| Customer      | cust1@hotel.com       | cust123  |
+| Receptionist  | rec1@hotel.com        | rec123   |
+| Room Services | rs1@hotel.com         | room123  |
+| Manager       | manager1@hotel.com    | manager123 |
+
+
 Finally you can find our final release of the application from 
 ``` sh
 build\Desktop_Qt_6_8_2_MinGW_64_bit-Release\release
